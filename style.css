@@ -1,0 +1,136 @@
+/*cores*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfbf9;
+  font-family: "Poppins", serif;
+  font-style: normal;
+}
+body header {
+  width: 100%;
+  padding: 20px 20px 10px 20px;
+  color: #faa548;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+body header h2 {
+  font-size: 28px;
+}
+body header button {
+  border: none;
+  background-color: transparent;
+}
+body header button i {
+  font-size: 30px;
+  color: #faa548;
+}
+body main {
+  padding: 20px 20px;
+}
+body main .pesquisa-fixa {
+  width: 100%;
+}
+body main .pesquisa-fixa p {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #d18939;
+  margin: 20px 0px;
+}
+body main .pesquisa-fixa .pesquisa {
+  flex: 1;
+  margin: 20px 0px;
+}
+body main .pesquisa-fixa .pesquisa label {
+  background-color: #f1f1f1;
+  padding: 20px 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+body main .pesquisa-fixa .pesquisa label input {
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  padding-right: 20px;
+}
+body main .pesquisa-fixa .pesquisa label i {
+  color: rgb(109, 109, 109);
+}
+body main .categorias-cardapio .titulo-cardapio {
+  color: #d18939;
+  margin: 10px 0px 20px 0px;
+}
+body main .categorias-cardapio .opcoes-cardapio {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
+  white-space: nowrap;
+  width: auto;
+  margin: 10px;
+  gap: 10px;
+}
+body main .categorias-cardapio .opcoes-cardapio .card {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 20px;
+  padding: 10px 20px;
+  gap: 10px;
+}
+body main .categorias-cardapio .opcoes-cardapio .card:hover {
+  background-color: #f0bd84;
+  transition: 0.4s;
+}
+body main .categorias-cardapio .lista-cardapio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+body main .categorias-cardapio .lista-cardapio .card {
+  width: 47%;
+  max-width: 300px;
+  height: 150px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 20px;
+  background-color: white;
+}
+body footer {
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+}
+body footer button {
+  border: none;
+  background-color: transparent;
+  width: 100px;
+}
+body footer button i {
+  font-size: 20px;
+  color: rgb(88, 88, 88);
+}
+body footer button:hover {
+  border: none;
+  background-color: transparent;
+  width: 100px;
+}
+body footer button:hover i {
+  color: #d18939;
+  transition: 0.2s;
+}/*# sourceMappingURL=style.css.map */
