@@ -19,10 +19,77 @@
             <h2>LOGO</h2>
         </div>
         <div>
-            <button><i class="fa-solid fa-bars"></i></button>
+            <button id="btnAbrirMenu"><i class="fa-solid fa-bars"></i></button>
+        </div>
+        <div class="container-menu">
+            <div>
+                <button id="btnAbrirMenuSair">
+                    <i class="fa-solid fa-rectangle-xmark"></i>
+                </button>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <a href="https://www.google.com/maps/place/R.+Jorge+Curi+Hallal,+3060+-+Vila+Princesa,+Pelotas+-+RS,+96072-060/@-31.6519738,-52.3364071,19z/data=!3m1!4b1!4m5!3m4!1s0x95104a3c41c099ab:0xfee66b795b845063!8m2!3d-31.6519738!4d-52.3364071?entry=ttu&g_ep=EgoyMDI1MDExNC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                            Como Chegar
+                        </a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <a href="#">
+                            Taxa de entrega
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
+        <div class="container-modal-card">
+            <div class="modal-card">
+                <div class="botao-fechar">
+                    <button id="btnAbrirCardSair">
+                        <i class="fa-solid fa-rectangle-xmark"></i>
+                    </button>
+                </div>
+                <div class="titulo">
+                    <h2>Seu Carrinho</h2>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <div class="img">
+                            <img src="homemade-hamburger-burger-with-fresh-vegetables-cheese-lettuce-mayonnaise-served-french-fries-pieces-brown-paper-black-stone-table-concept-fast-food-junk-food.jpg" alt="">
+                        </div>
+                        <div class="descricao">
+                            <div class="Item">
+                                <p>x-salada</p>
+                                <P><span>10,00</span> R$</P>
+                                <div class="acresentar">
+                                    <button>-</button>
+                                    <p>1</p>
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="excluir">
+                            <button><i class="fa-solid fa-trash"></i></button>
+                        </div>
+                    </div>            
+                </div>
+                <div class="obiservacao">
+                    <p>alguma observaçao ?</p>
+                    <textarea name="" id=""></textarea>
+                </div>
+                <div class="soma">
+                    <h2>TOTAL: <span>100,00</span></h2>
+                </div>
+                <div class="btn-fazer-pedido">
+                    <button id="enviar-pedido">Enviar Pedido</button>
+                </div>
+            </div>
+            
+        </div>
         <section class="pesquisa-fixa">
             <div class="">
                 <p>Encontre sua<br> comida favorita</p>
@@ -32,7 +99,6 @@
                     <input type="text" id="pesquisa" placeholder="Pesquisar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </label>
-                
             </div>
         </section>
         <section class="categorias-cardapio">
@@ -54,22 +120,36 @@
                 </div>
             </div>
             <div class="lista-cardapio">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+                <div class="card">
+                    <div class="img">
+                        <img src="high-angle-glasses-beer-with-cheeseburger-potato-chips.jpg" alt="" width="100%">
+                    </div>
+                    <div class="descricao">
+                        <P>X-Calabresa</P>
+                        <span>22,00 R$</span>
+                    </div>
+                    <div class="botao-add-card">
+                        <button>add card</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="homemade-hamburger-burger-with-fresh-vegetables-cheese-lettuce-mayonnaise-served-french-fries-pieces-brown-paper-black-stone-table-concept-fast-food-junk-food.jpg" alt="" width="100%">
+                    </div>
+                    <div class="descricao">
+                        <P>X-SALADA</P>
+                        <span>18,00 R$</span>
+                    </div>
+                    <div class="botao-add-card">
+                        <button>Add Card</button>
+                    </div>
+                </div>
             </div>
         </section>
         <footer>
-            <button><i class="fa-solid fa-house"></i></button>
-            <button><i class="fa-solid fa-cart-shopping"></i></button>
-            <button><i class="fa-solid fa-user"></i></button>
-            
+            <button id="btnAbrirCard"><i class="fa-solid fa-cart-shopping"></i></button> 
         </footer>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>

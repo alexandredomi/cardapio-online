@@ -1,0 +1,37 @@
+{
+    "lanches": [
+      {
+        "nome": "salada",
+        "descricao" : "carne ",
+        "preco" : "25,00"
+      },
+      {
+        "nome": "x-calabresa",
+        "descricao" : "carne ",
+        "preco" : "25,00"
+      }
+    ],
+    "bebidas": [
+      {
+        "nome": "coca-cola 2L",
+        "preco" : "10,00"
+      },
+      {
+        "nome": "Biri guarana 2L",
+        "descricao" : "carne ",
+        "preco" : "25,00"
+      }
+    ],
+    "pasteis": [
+      {
+        "nome": "calabresa",
+        "descricao" : "calabresa fateada",
+        "preco" : "10,00"
+      },
+      {
+        "nome": "carne e queijo",
+        "descricao" : "carne moida, queijo mutsarela e tempero verde",
+        "preco" : "25,00"
+      }
+    ]
+  }
