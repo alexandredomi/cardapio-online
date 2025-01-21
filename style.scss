@@ -106,7 +106,7 @@ body{
                         border: none;
                         i{
                             font-size: 30px;
-                            color: $secondary;
+                            color: $primary;
                         }
                     }
                 }
@@ -235,6 +235,11 @@ body{
                         font-size: 20px;
                         padding-right: 20px;
                     }
+                    textarea:focus, input:focus, select:focus {
+                        box-shadow: 0 0 0 0;
+                        border: 0 none;
+                        outline: 0;
+                    } 
                     i{
                         color: rgb(109, 109, 109);
                     }
@@ -255,17 +260,24 @@ body{
                 width: auto;
                 margin: 10px;
                 gap: 10px;
-                .card{
+                .btn-card{
                     display: flex;
                     align-items: center;
                     background-color: $campo-pesquisa;
                     border-radius: 20px;
-                    padding: 10px 20px;
+                    border: none;
+                    padding: 14px 24px;
                     gap: 10px;
+                    cursor: pointer;
                 }
-                .card:hover{
+                .btn-card:hover{
                     background-color: $secondary;
                     transition: 0.4s;
+                }
+                .btn-card:focus{
+                    background-color: $secondary;
+                    transition: 0.4s;
+                    border: none;
                 }
             }
             .lista-cardapio{
@@ -328,6 +340,7 @@ body{
             background-color: white;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
             border-radius: 50%;
+            cursor: pointer;
             i{
                 font-size: 30px;
                 color: $primary;

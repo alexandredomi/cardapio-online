@@ -115,7 +115,7 @@ body main .container-modal-card .modal-card .botao-fechar button {
 }
 body main .container-modal-card .modal-card .botao-fechar button i {
   font-size: 30px;
-  color: #f0bd84;
+  color: #d18939;
 }
 body main .container-modal-card .modal-card .titulo {
   text-align: center;
@@ -240,6 +240,11 @@ body main .pesquisa-fixa .pesquisa label input {
   font-size: 20px;
   padding-right: 20px;
 }
+body main .pesquisa-fixa .pesquisa label textarea:focus, body main .pesquisa-fixa .pesquisa label input:focus, body main .pesquisa-fixa .pesquisa label select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
 body main .pesquisa-fixa .pesquisa label i {
   color: rgb(109, 109, 109);
 }
@@ -256,17 +261,24 @@ body main .categorias-cardapio .opcoes-cardapio {
   margin: 10px;
   gap: 10px;
 }
-body main .categorias-cardapio .opcoes-cardapio .card {
+body main .categorias-cardapio .opcoes-cardapio .btn-card {
   display: flex;
   align-items: center;
   background-color: #f1f1f1;
   border-radius: 20px;
-  padding: 10px 20px;
+  border: none;
+  padding: 14px 24px;
   gap: 10px;
+  cursor: pointer;
 }
-body main .categorias-cardapio .opcoes-cardapio .card:hover {
+body main .categorias-cardapio .opcoes-cardapio .btn-card:hover {
   background-color: #f0bd84;
   transition: 0.4s;
+}
+body main .categorias-cardapio .opcoes-cardapio .btn-card:focus {
+  background-color: #f0bd84;
+  transition: 0.4s;
+  border: none;
 }
 body main .categorias-cardapio .lista-cardapio {
   display: flex;
@@ -326,6 +338,7 @@ body footer button {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 50%;
+  cursor: pointer;
 }
 body footer button i {
   font-size: 30px;
