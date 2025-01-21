@@ -76,6 +76,10 @@ body header .container-menu div ul li a {
   font-weight: 600;
 }
 body main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 30px 0px;
   padding: 20px 20px;
 }
 body main .container-modal-card.ativo {
@@ -134,7 +138,7 @@ body main .container-modal-card .modal-card .cards .card {
   padding: 10px;
 }
 body main .container-modal-card .modal-card .cards .card .img {
-  width: 80px;
+  width: 100px;
 }
 body main .container-modal-card .modal-card .cards .card .img img {
   width: 100%;
@@ -201,10 +205,10 @@ body main .container-modal-card .modal-card .btn-fazer-pedido {
   margin-bottom: 20px;
 }
 body main .container-modal-card .modal-card .btn-fazer-pedido button {
-  width: 80%;
+  position: absolute;
+  width: 100%;
   padding: 10px;
   background-color: #d18939;
-  border-radius: 10px;
   color: white;
   border: none;
   cursor: pointer;
@@ -250,7 +254,6 @@ body main .pesquisa-fixa .pesquisa label i {
 }
 body main .categorias-cardapio .titulo-cardapio {
   color: #d18939;
-  margin: 10px 0px 20px 0px;
 }
 body main .categorias-cardapio .opcoes-cardapio {
   display: flex;
@@ -260,6 +263,7 @@ body main .categorias-cardapio .opcoes-cardapio {
   width: auto;
   margin: 10px;
   gap: 10px;
+  padding-bottom: 10px;
 }
 body main .categorias-cardapio .opcoes-cardapio .btn-card {
   display: flex;
@@ -267,9 +271,16 @@ body main .categorias-cardapio .opcoes-cardapio .btn-card {
   background-color: #f1f1f1;
   border-radius: 20px;
   border: none;
-  padding: 14px 24px;
+  padding: 10px 20px;
   gap: 10px;
   cursor: pointer;
+}
+body main .categorias-cardapio .opcoes-cardapio .btn-card p {
+  text-decoration: none;
+  font-size: 18px;
+}
+body main .categorias-cardapio .opcoes-cardapio .btn-card i {
+  font-size: 18px;
 }
 body main .categorias-cardapio .opcoes-cardapio .btn-card:hover {
   background-color: #f0bd84;
@@ -288,6 +299,7 @@ body main .categorias-cardapio .lista-cardapio {
   margin-top: 20px;
 }
 body main .categorias-cardapio .lista-cardapio .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 45%;
@@ -310,16 +322,16 @@ body main .categorias-cardapio .lista-cardapio .card .descricao span {
 }
 body main .categorias-cardapio .lista-cardapio .card .botao-add-card {
   display: flex;
+  width: 100%;
   justify-content: center;
-  margin-bottom: 20px;
 }
 body main .categorias-cardapio .lista-cardapio .card .botao-add-card button {
-  width: 80%;
+  width: 100%;
+  height: 40px;
   background-color: #d18939;
   border: none;
   color: white;
   padding: 5px 0px;
-  border-radius: 10px;
   cursor: pointer;
   font-size: 16px;
 }
