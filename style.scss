@@ -16,9 +16,6 @@ body{
         box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
         .logo{
             font-size: 28px;
-            i{
-                
-            }
         }
         button{
             border: none;
@@ -96,14 +93,10 @@ body{
             z-index: 2;
             .modal-card{
                 position: relative;
-                width: 90%;
-                max-width: 600px;
-                max-height: 90vh;
+                width: 100%;
+                min-height: 100vh;
                 background-color: white;
-                border-radius: 10px;
                 padding: 10px 10px 50px 10px;
-                overflow-y: auto; /* Ativa a rolagem vertical */
-                overflow-x: hidden; /* Evita rolagem horizontal */
                 .botao-fechar{
                     width: 100%;
                     display: flex;

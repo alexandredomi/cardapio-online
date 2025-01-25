@@ -22,14 +22,13 @@ btnAbrirMenuSair.addEventListener('click', ()=>{
 
 //consumo json
 var listaCardapio = document.querySelector('.lista-cardapio')
-
+var btnMenuBebidas = document.getElementById
 fetch('/data.json')
       .then(response => response.json())
-      .then(json => console.log(json.bebidas))
-      
+      .then(json => console.log(json.bebidas))    
+
 //alerta enviar pedido
 var btnEnviarPedido = document.querySelector('#enviar-pedido')
-
       btnEnviarPedido.addEventListener('click', ()=>{
             let confirmarenvio = confirm('deseja enviar pedido ao resourante')
             if(confirmarenvio){
