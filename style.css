@@ -133,8 +133,7 @@ body header .container-menu div ul li:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 60vh;
-  min-height: 200px;
+  height: 50vh;
   overflow-y: auto;
 }
 .container-modal-card .modal-card .cards .card {
