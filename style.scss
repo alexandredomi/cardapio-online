@@ -59,15 +59,21 @@ body{
                         i{
                             font-size: 22px;
                             margin-right: 10px;
-                            color: rgb(71, 71, 71);
+                            color: rgb(71, 71, 71); 
                         }
                         a{
                             text-decoration: none;
                             color: rgb(71, 71, 71);
                             font-size: 22px;
                             font-weight: 600;
+                        }
+                        &:hover{
+                            color: $primary;
+                            transition: 0.4S;
                         }    
-                    } 
+                    }        
+                }
+                    
                     
                 }
             }
@@ -240,7 +246,7 @@ body{
                         outline: 0;
                     } 
                     i{
-                        color: rgb(109, 109, 109);
+                        color: $text-campo-cinza;
                     }
                 }
             }
@@ -267,12 +273,18 @@ body{
                     padding: 10px 20px;
                     gap: 10px;
                     cursor: pointer;
-                    p{
-                        text-decoration: none;
+                    p{  
+                        color: $text-campo-cinza;
                         font-size: 18px;
                     }
                     i{
+                        color: $text-campo-cinza;
                         font-size: 18px;
+                    }
+                    &:hover{
+                        p, i{  
+                            color: white;
+                        }
                     }
                 }
                 .btn-card:hover{
@@ -283,6 +295,9 @@ body{
                     background-color: $secondary;
                     transition: 0.4s;
                     border: none;
+                        p, i{  
+                            color: white;
+                        }
                 }
             }
             .lista-cardapio{
@@ -355,4 +370,3 @@ body{
             }
         }
     }
-}
