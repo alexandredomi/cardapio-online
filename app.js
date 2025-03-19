@@ -26,6 +26,8 @@ var btnMenuBebidas = document.getElementById
 fetch('/data.json')
       .then(response => response.json())
       .then(json => console.log(json.bebidas))    
+//get lanches
+let btn
 
 //alerta enviar pedido
 var btnEnviarPedido = document.querySelector('#enviar-pedido')
