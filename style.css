@@ -38,15 +38,17 @@ body header .container-menu.ativo {
   display: flex;
 }
 body header .container-menu {
+  position: absolute;
+  position: fixed;
   display: none;
   flex-direction: column;
   align-items: center;
-  position: absolute;
   top: 0;
   right: 0;
+  bottom: 0;
   width: 80%;
   max-width: 400px;
-  height: 100vh;
+  height: 100%;
   background-color: white;
   z-index: 3;
   box-shadow: rgba(0, 0, 0, 0.61) 0px 5px 15px;
@@ -83,115 +85,112 @@ body header .container-menu div ul li:hover {
   transition: 0.4S;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px 20px;
-}
-main .container-modal-card.ativo {
+.container-modal-card.ativo {
   display: flex;
 }
-main .container-modal-card {
+
+.container-modal-card {
   display: none;
   justify-content: center;
-  position: absolute;
+  position: relative;
   align-items: center;
   top: 0;
+  position: fixed;
   left: 0;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.61);
   z-index: 2;
+  overflow-y: auto;
 }
-main .container-modal-card .modal-card {
+.container-modal-card .modal-card {
   position: relative;
   width: 100%;
   min-height: 100vh;
   background-color: white;
   padding: 10px 10px 50px 10px;
 }
-main .container-modal-card .modal-card .botao-fechar {
+.container-modal-card .modal-card .botao-fechar {
   width: 100%;
   display: flex;
   justify-content: end;
   border: none;
 }
-main .container-modal-card .modal-card .botao-fechar button {
+.container-modal-card .modal-card .botao-fechar button {
   background-color: transparent;
   cursor: pointer;
   border: none;
 }
-main .container-modal-card .modal-card .botao-fechar button i {
+.container-modal-card .modal-card .botao-fechar button i {
   font-size: 30px;
   color: #dd2f2e;
 }
-main .container-modal-card .modal-card .titulo {
+.container-modal-card .modal-card .titulo {
   text-align: center;
   margin-bottom: 20px;
 }
-main .container-modal-card .modal-card .cards {
+.container-modal-card .modal-card .cards {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-main .container-modal-card .modal-card .cards .card {
+.container-modal-card .modal-card .cards .card {
   display: flex;
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 10px;
   padding: 10px;
 }
-main .container-modal-card .modal-card .cards .card .img {
+.container-modal-card .modal-card .cards .card .img {
   width: 100px;
 }
-main .container-modal-card .modal-card .cards .card .img img {
+.container-modal-card .modal-card .cards .card .img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-main .container-modal-card .modal-card .cards .card .descricao {
+.container-modal-card .modal-card .cards .card .descricao {
   display: flex;
   flex: 1;
   padding: 0px 10px;
 }
-main .container-modal-card .modal-card .cards .card .descricao .item p {
+.container-modal-card .modal-card .cards .card .descricao .item p {
   font-size: 22px;
   font-weight: 600;
 }
-main .container-modal-card .modal-card .cards .card .descricao .acresentar {
+.container-modal-card .modal-card .cards .card .descricao .acresentar {
   display: flex;
   gap: 10px;
   align-items: center;
 }
-main .container-modal-card .modal-card .cards .card .descricao .acresentar button {
+.container-modal-card .modal-card .cards .card .descricao .acresentar button {
   border: none;
   background-color: #dd2f2e;
   width: 20px;
   border-radius: 4px;
   cursor: pointer;
 }
-main .container-modal-card .modal-card .cards .card .excluir {
+.container-modal-card .modal-card .cards .card .excluir {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
 }
-main .container-modal-card .modal-card .cards .card .excluir button {
+.container-modal-card .modal-card .cards .card .excluir button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
-main .container-modal-card .modal-card .cards .card .excluir button i {
+.container-modal-card .modal-card .cards .card .excluir button i {
   font-size: 24px;
   color: rgb(80, 80, 80);
 }
-main .container-modal-card .modal-card .obiservacao {
+.container-modal-card .modal-card .obiservacao {
   padding: 20px 0px;
 }
-main .container-modal-card .modal-card .obiservacao textarea {
+.container-modal-card .modal-card .obiservacao textarea {
   width: 100%;
   height: 50px;
   border: solid rgb(80, 80, 80) 1px;
@@ -199,12 +198,12 @@ main .container-modal-card .modal-card .obiservacao textarea {
   padding: 5px;
   resize: none;
 }
-main .container-modal-card .modal-card .soma {
+.container-modal-card .modal-card .soma {
   width: 100%;
   text-align: center;
   padding: 10px;
 }
-main .container-modal-card .modal-card #enviar-pedido {
+.container-modal-card .modal-card #enviar-pedido {
   width: 100%;
   height: 50px;
   position: fixed;
@@ -217,6 +216,13 @@ main .container-modal-card .modal-card #enviar-pedido {
   border: none;
   cursor: pointer;
   font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 20px;
 }
 main .pesquisa-fixa {
   width: 100%;
