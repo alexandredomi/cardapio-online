@@ -98,11 +98,14 @@ body{
         z-index: 2;
         .modal-card{
             position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             width: 100%;
             min-height: 100vh;
             background-color: white;
             padding: 10px 10px 50px 10px;
-            overflow: auto;
+            overflow-y: hidden;
             .botao-fechar{
                 width: 100%;
                 display: flex;
@@ -126,7 +129,8 @@ body{
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-                height: 50vh;
+                height: 60vh;
+                min-height: 10vh;
                 overflow-y: auto;
                 .card{
                     display: flex;

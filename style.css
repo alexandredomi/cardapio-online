@@ -104,11 +104,14 @@ body header .container-menu div ul li:hover {
 }
 .container-modal-card .modal-card {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   min-height: 100vh;
   background-color: white;
   padding: 10px 10px 50px 10px;
-  overflow: auto;
+  overflow-y: hidden;
 }
 .container-modal-card .modal-card .botao-fechar {
   width: 100%;
@@ -133,7 +136,8 @@ body header .container-menu div ul li:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 50vh;
+  height: 60vh;
+  min-height: 10vh;
   overflow-y: auto;
 }
 .container-modal-card .modal-card .cards .card {
