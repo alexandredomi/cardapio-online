@@ -136,7 +136,7 @@ body header .container-menu div ul li:hover {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 60vh;
+  height: 50vh;
   min-height: 10vh;
   overflow-y: auto;
 }
